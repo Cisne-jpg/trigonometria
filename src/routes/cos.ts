@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { getCos } from '../handlers/trigHandler';
+import { cosController } from '../controllers/cos.controllers';
 
 const router = Router();
-router.get('/', getCos);
+router.get('/:id', cosController);
 export default router;

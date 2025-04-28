@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { getTan } from '../handlers/trigHandler';
+import { tanController } from '../controllers/tan.controller';
 
 const router = Router();
-router.get('/', getTan);
+router.get('/:id', tanController);
 export default router;
